@@ -1,21 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todolist</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://blog.lulu.com/content/images/2024/12/072120-ToDoList-Blog.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Todo list</h1>
-        <div>
-            <textarea id="text" placeholder="Додайте справу" rows="1"></textarea>
-            <button id="btn" onclick="add()">+</button>
+    <div id="connectedIndicator">Підключено до друга! 🎉</div>
+    <div id="copiedIndicator">ID скопійовано! 📋</div>
+    <div id="disconnectedIndicator">Відключено ❌</div>
+    
+    <!-- Кнопка мов -->
+    <div class="language-switcher">
+        <button class="language-btn">🌐 Мова</button>
+        <div class="language-dropdown">
+            <div class="language-search-container">
+                <input type="text" class="language-search" placeholder="Пошук мов...">
+            </div>
+            <div class="language-list">
+                <button data-lang="ar">العربية (Arabic)</button>
+                <button data-lang="bg">Български (Bulgarian)</button>
+                <button data-lang="zh">中文 (Chinese)</button>
+                <button data-lang="nl">Nederlands (Dutch)</button>
+                <button data-lang="en">English (English)</button>
+                <button data-lang="fr">Français (French)</button>
+                <button data-lang="de">Deutsch (German)</button>
+                <button data-lang="hi">हिन्दी (Hindi)</button>
+                <button data-lang="it">Italiano (Italian)</button>
+                <button data-lang="ja">日本語 (Japanese)</button>
+                <button data-lang="ko">한국어 (Korean)</button>
+                <button data-lang="pl">Polski (Polish)</button>
+                <button data-lang="pt">Português (Portuguese)</button>
+                <button data-lang="ru">Русский (Russian)</button>
+                <button data-lang="es">Español (Spanish)</button>
+                <button data-lang="sv">Svenska (Swedish)</button>
+                <button data-lang="tr">Türkçe (Turkish)</button>
+                <button data-lang="uk">Українська (Ukrainian)</button>
+            </div>
         </div>
-        <ul id="todolist"></ul>
     </div>
+
+    <div class="main-container">
+        <div class="wrapper">
+            <h1>Todo list</h1>
+
+            <div class="input-container">
+                <textarea id="text" placeholder="Додайте справу" rows="1"></textarea>
+                <button id="btn" onclick="add()">+</button>
+            </div>
+
+            <!-- Кнопка для спільного доступу -->
+            <button id="shareToggleBtn" class="share-toggle-btn">
+                📡 Спільний доступ
+            </button>
+
+            <!-- Панель спільного доступу -->
+            <div id="sharePanel" class="share-panel">
+                <div class="peer-section">
+                    <div class="id-container">
+                        <label>Твій ID:</label>
+                        <div class="id-display">
+                            <span id="myPeerId">Завантаження...</span>
+                            <button id="copyIdBtn" class="icon-btn" title="Копіювати ID">📋</button>
+                        </div>
+                    </div>
+                    
+                    <div class="connect-container">
+                        <label>Підключитись до друга:</label>
+                        <div class="connect-inputs">
+                            <input id="friendIdInput" placeholder="Введіть ID друга">
+                            <div class="connection-buttons">
+                                <button id="connectBtn" class="connect-btn">🔗</button>
+                                <button id="disconnectBtn" class="disconnect-btn" disabled>❌</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul id="todolist"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
+
