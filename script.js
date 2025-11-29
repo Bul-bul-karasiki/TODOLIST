@@ -14,7 +14,10 @@ const languageManager = {
             friendIdPlaceholder: "Введіть ID друга",
             connected: "Підключено до друга! 🎉",
             copied: "ID скопійовано! 📋",
-            disconnected: "Відключено ❌"
+            disconnected: "Відключено ❌",
+            copyButton: "Копіювати",
+            connectButton: "Підключити",
+            disconnectButton: "Відключити"
         },
         en: {
             language: "Language",
@@ -27,7 +30,10 @@ const languageManager = {
             friendIdPlaceholder: "Enter friend's ID",
             connected: "Connected to friend! 🎉",
             copied: "ID copied! 📋",
-            disconnected: "Disconnected ❌"
+            disconnected: "Disconnected ❌",
+            copyButton: "Copy",
+            connectButton: "Connect",
+            disconnectButton: "Disconnect"
         },
         bg: {
             language: "Език",
@@ -40,7 +46,10 @@ const languageManager = {
             friendIdPlaceholder: "Въведи ID на приятел",
             connected: "Свързан с приятел! 🎉",
             copied: "ID копиран! 📋",
-            disconnected: "Прекъсната връзка ❌"
+            disconnected: "Прекъсната връзка ❌",
+            copyButton: "Копирай",
+            connectButton: "Свържи",
+            disconnectButton: "Прекъсни"
         },
         es: {
             language: "Idioma",
@@ -53,7 +62,10 @@ const languageManager = {
             friendIdPlaceholder: "Ingresa el ID del amigo",
             connected: "¡Conectado con amigo! 🎉",
             copied: "¡ID copiado! 📋",
-            disconnected: "Desconectado ❌"
+            disconnected: "Desconectado ❌",
+            copyButton: "Copiar",
+            connectButton: "Conectar",
+            disconnectButton: "Desconectar"
         },
         fr: {
             language: "Langue",
@@ -66,7 +78,10 @@ const languageManager = {
             friendIdPlaceholder: "Entrez l'ID de l'ami",
             connected: "Connecté à l'ami ! 🎉",
             copied: "ID copié ! 📋",
-            disconnected: "Déconnecté ❌"
+            disconnected: "Déconnecté ❌",
+            copyButton: "Copier",
+            connectButton: "Connecter",
+            disconnectButton: "Déconnecter"
         },
         de: {
             language: "Sprache",
@@ -79,7 +94,10 @@ const languageManager = {
             friendIdPlaceholder: "Freund-ID eingeben",
             connected: "Mit Freund verbunden! 🎉",
             copied: "ID kopiert! 📋",
-            disconnected: "Getrennt ❌"
+            disconnected: "Getrennt ❌",
+            copyButton: "Kopieren",
+            connectButton: "Verbinden",
+            disconnectButton: "Trennen"
         },
         pl: {
             language: "Język",
@@ -92,7 +110,10 @@ const languageManager = {
             friendIdPlaceholder: "Wprowadź ID przyjaciela",
             connected: "Połączono z przyjacielem! 🎉",
             copied: "ID skopiowane! 📋",
-            disconnected: "Rozłączono ❌"
+            disconnected: "Rozłączono ❌",
+            copyButton: "Kopiuj",
+            connectButton: "Połącz",
+            disconnectButton: "Rozłącz"
         },
         it: {
             language: "Lingua",
@@ -105,7 +126,10 @@ const languageManager = {
             friendIdPlaceholder: "Inserisci ID dell'amico",
             connected: "Connesso con l'amico! 🎉",
             copied: "ID copiato! 📋",
-            disconnected: "Disconnesso ❌"
+            disconnected: "Disconnesso ❌",
+            copyButton: "Copia",
+            connectButton: "Connetti",
+            disconnectButton: "Disconnetti"
         },
         pt: {
             language: "Idioma",
@@ -118,7 +142,10 @@ const languageManager = {
             friendIdPlaceholder: "Digite o ID do amigo",
             connected: "Conectado com amigo! 🎉",
             copied: "ID copiado! 📋",
-            disconnected: "Desconectado ❌"
+            disconnected: "Desconectado ❌",
+            copyButton: "Copiar",
+            connectButton: "Conectar",
+            disconnectButton: "Desconectar"
         },
         ja: {
             language: "言語",
@@ -131,7 +158,10 @@ const languageManager = {
             friendIdPlaceholder: "友達のIDを入力",
             connected: "友達に接続しました！🎉",
             copied: "IDをコピーしました！📋",
-            disconnected: "切断されました ❌"
+            disconnected: "切断されました ❌",
+            copyButton: "コピー",
+            connectButton: "接続",
+            disconnectButton: "切断"
         },
         ko: {
             language: "언어",
@@ -144,7 +174,10 @@ const languageManager = {
             friendIdPlaceholder: "친구 ID 입력",
             connected: "친구에게 연결되었습니다! 🎉",
             copied: "ID가 복사되었습니다! 📋",
-            disconnected: "연결 끊김 ❌"
+            disconnected: "연결 끊김 ❌",
+            copyButton: "복사",
+            connectButton: "연결",
+            disconnectButton: "연결 끊기"
         },
         zh: {
             language: "语言",
@@ -157,7 +190,10 @@ const languageManager = {
             friendIdPlaceholder: "输入朋友ID",
             connected: "已连接到朋友！🎉",
             copied: "ID已复制！📋",
-            disconnected: "已断开连接 ❌"
+            disconnected: "已断开连接 ❌",
+            copyButton: "复制",
+            connectButton: "连接",
+            disconnectButton: "断开"
         },
         ar: {
             language: "اللغة",
@@ -170,7 +206,10 @@ const languageManager = {
             friendIdPlaceholder: "أدخل معرف الصديق",
             connected: "تم الاتصال بالصديق! 🎉",
             copied: "تم نسخ المعرف! 📋",
-            disconnected: "تم قطع الاتصال ❌"
+            disconnected: "تم قطع الاتصال ❌",
+            copyButton: "نسخ",
+            connectButton: "اتصال",
+            disconnectButton: "قطع الاتصال"
         },
         ru: {
             language: "Язык",
@@ -183,7 +222,10 @@ const languageManager = {
             friendIdPlaceholder: "Введите ID друга",
             connected: "Подключено к другу! 🎉",
             copied: "ID скопирован! 📋",
-            disconnected: "Отключено ❌"
+            disconnected: "Отключено ❌",
+            copyButton: "Копировать",
+            connectButton: "Подключить",
+            disconnectButton: "Отключить"
         },
         nl: {
             language: "Taal",
@@ -196,7 +238,10 @@ const languageManager = {
             friendIdPlaceholder: "Voer vriend ID in",
             connected: "Verbonden met vriend! 🎉",
             copied: "ID gekopieerd! 📋",
-            disconnected: "Verbinding verbroken ❌"
+            disconnected: "Verbinding verbroken ❌",
+            copyButton: "Kopiëren",
+            connectButton: "Verbinden",
+            disconnectButton: "Verbreken"
         },
         sv: {
             language: "Språk",
@@ -209,7 +254,10 @@ const languageManager = {
             friendIdPlaceholder: "Ange väns ID",
             connected: "Ansluten till vän! 🎉",
             copied: "ID kopierat! 📋",
-            disconnected: "Nedkopplad ❌"
+            disconnected: "Nedkopplad ❌",
+            copyButton: "Kopiera",
+            connectButton: "Anslut",
+            disconnectButton: "Koppla ner"
         },
         tr: {
             language: "Dil",
@@ -222,7 +270,10 @@ const languageManager = {
             friendIdPlaceholder: "Arkadaş ID'sini gir",
             connected: "Arkadaşa bağlandı! 🎉",
             copied: "ID kopyalandı! 📋",
-            disconnected: "Bağlantı kesildi ❌"
+            disconnected: "Bağlantı kesildi ❌",
+            copyButton: "Kopyala",
+            connectButton: "Bağlan",
+            disconnectButton: "Bağlantıyı kes"
         },
         hi: {
             language: "भाषा",
@@ -235,7 +286,10 @@ const languageManager = {
             friendIdPlaceholder: "दोस्त की आईडी दर्ज करें",
             connected: "दोस्त से जुड़ गया! 🎉",
             copied: "आईडी कॉपी की गई! 📋",
-            disconnected: "डिस्कनेक्ट हो गया ❌"
+            disconnected: "डिस्कनेक्ट हो गया ❌",
+            copyButton: "कॉपी करें",
+            connectButton: "कनेक्ट करें",
+            disconnectButton: "डिस्कनेक्ट करें"
         }
     },
 
@@ -294,6 +348,37 @@ const languageManager = {
                 this.hideDropdown();
             }
         });
+
+        // Універсальне рішення для всіх мобільних пристроїв
+        searchInput.addEventListener('focus', (e) => {
+            if (this.isMobileDevice()) {
+                // Миттєво знімаємо фокус на мобільних пристроях
+                setTimeout(() => {
+                    searchInput.blur();
+                }, 10);
+            }
+        });
+
+        // Додаткове запобігання для Android
+        searchInput.addEventListener('touchstart', (e) => {
+            if (this.isMobileDevice()) {
+                // Запобігаємо стандартній поведінці для Android
+                e.preventDefault();
+            }
+        });
+
+        // Запобігання фокусу при кліку на мобільних
+        searchInput.addEventListener('mousedown', (e) => {
+            if (this.isMobileDevice()) {
+                e.preventDefault();
+            }
+        });
+    },
+
+    // Функція для визначення мобільних пристроїв
+    isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+               window.innerWidth <= 768;
     },
 
     showDropdown() {
@@ -310,7 +395,9 @@ const languageManager = {
         
         searchInput.value = '';
         this.filterLanguages('');
-        setTimeout(() => searchInput.focus(), 300);
+        
+        // ВИДАЛЕНО: автоматичний фокус на поле пошуку
+        // Це запобігає відкриттю клавіатури на всіх пристроях
     },
 
     hideDropdown() {
@@ -354,7 +441,7 @@ const languageManager = {
     applyTranslations() {
         const t = this.translations[this.currentLang];
         
-        // Оновлюємо всі тексти
+        // Оновлюємо всі тексти КРІМ заголовка
         document.getElementById('text').placeholder = t.placeholder;
         document.querySelector('.language-btn').textContent = `🌐 ${t.language}`;
         document.querySelector('.language-search').placeholder = t.searchPlaceholder;
@@ -369,6 +456,11 @@ const languageManager = {
         document.querySelector('.id-container label').textContent = t.yourId;
         document.querySelector('.connect-container label').textContent = t.connectFriend;
         document.getElementById('friendIdInput').placeholder = t.friendIdPlaceholder;
+        
+        // Оновлюємо тексти кнопок
+        document.getElementById('copyIdBtn').textContent = `📋 ${t.copyButton}`;
+        document.getElementById('connectBtn').textContent = `🔗 ${t.connectButton}`;
+        document.getElementById('disconnectBtn').textContent = `❌ ${t.disconnectButton}`;
         
         // Оновлюємо тексти сповіщень
         document.getElementById('connectedIndicator').textContent = t.connected;
@@ -415,7 +507,6 @@ let count = 1;
 let list = document.getElementById("todolist");
 let draggedItem = null;
 
-// Функція для перемикання панелі спільного доступу - ВИПРАВЛЕНА
 function initSharePanel() {
     const shareToggleBtn = document.getElementById('shareToggleBtn');
     const sharePanel = document.getElementById('sharePanel');
@@ -462,6 +553,7 @@ function initSharePanel() {
         }
     });
 }
+
 function saveTodos() {
     const todos = [];
     document.querySelectorAll("#todolist li").forEach(li => {
@@ -706,6 +798,7 @@ list.addEventListener("dragover", (e) => {
 const peerManager = {
     peer: null,
     conn: null,
+    connectedCount: 0,
     
     init() {
         // Спочатку показуємо "Завантаження..."
@@ -726,6 +819,7 @@ const peerManager = {
             document.getElementById("myPeerId").textContent = id;
             this.savePeerId(id); // Зберігаємо ID
             this.updateConnectionButtons(false);
+            this.updateConnectionCounter();
         });
         
         this.peer.on('connection', (connection) => {
@@ -791,7 +885,9 @@ const peerManager = {
             this.conn.close();
             this.conn = null;
         }
+        this.connectedCount = 0;
         this.updateConnectionButtons(false);
+        this.updateConnectionCounter();
         this.showDisconnectedIndicator();
     },
     
@@ -800,7 +896,9 @@ const peerManager = {
         
         this.conn.on('open', () => {
             console.log('Connection established with: ' + this.conn.peer);
+            this.connectedCount = 1;
             this.updateConnectionButtons(true);
+            this.updateConnectionCounter();
             this.showConnectedIndicator();
             this.sendTodos();
         });
@@ -812,13 +910,17 @@ const peerManager = {
         
         this.conn.on('close', () => {
             console.log('Connection closed');
+            this.connectedCount = 0;
             this.updateConnectionButtons(false);
+            this.updateConnectionCounter();
             this.showDisconnectedIndicator();
         });
         
         this.conn.on('error', (err) => {
             console.error('Connection error:', err);
+            this.connectedCount = 0;
             this.updateConnectionButtons(false);
+            this.updateConnectionCounter();
             alert('Помилка зʼєднання: ' + err.message);
         });
     },
@@ -836,6 +938,21 @@ const peerManager = {
             connectBtn.disabled = false;
             disconnectBtn.disabled = true;
             friendInput.disabled = false;
+        }
+    },
+    
+    updateConnectionCounter() {
+        const counter = document.getElementById("connectionCounter");
+        const counterNumber = counter.querySelector(".counter-number");
+        
+        counterNumber.textContent = this.connectedCount;
+        
+        if (this.connectedCount > 0) {
+            counter.classList.add("connected");
+            counter.classList.remove("disconnected");
+        } else {
+            counter.classList.add("disconnected");
+            counter.classList.remove("connected");
         }
     },
     
