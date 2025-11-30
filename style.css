@@ -332,7 +332,6 @@ button#btn:hover {
 }
 
 /* Кнопка для спільного доступу - ВИПРАВЛЕНА ВЕРСІЯ */
-/* ЗАМІНИТИ стиль .share-toggle-btn на: */
 .share-toggle-btn {
     background: rgba(255,255,255,0.2);
     border: 2px solid rgba(0,0,0,0.3);
@@ -346,7 +345,7 @@ button#btn:hover {
     color: #333;
     width: 100%;
     text-align: center;
-    
+    outline: none;
 }
 
 .share-toggle-btn:hover {
@@ -377,7 +376,6 @@ button#btn:hover {
     max-height: 400px;
     padding: 25px;
     opacity: 1;
-
     overflow: visible;
     transform: scaleY(1) translateY(0);
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -449,10 +447,13 @@ button#btn:hover {
     transform: scale(1.05); 
 }
 
+/* ВИПРАВЛЕННЯ ДЛЯ КНОПОК ПІДКЛЮЧЕННЯ - ЗАПОБІГАННЯ ПЕРЕНОСУ */
 .connect-inputs {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 #friendIdInput {
@@ -463,10 +464,11 @@ button#btn:hover {
     background: lightgray;
     outline: none;
     transition: border-color 0.3s ease;
-    min-width: 0;
+    min-width: 120px;
     font-size: 14px;
     font-family: inherit;
     box-sizing: border-box;
+    flex-shrink: 1;
 }
 
 #friendIdInput:focus { 
@@ -477,6 +479,7 @@ button#btn:hover {
     display: flex;
     gap: 8px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .connect-btn, .disconnect-btn {
@@ -899,13 +902,13 @@ li.deleting {
         gap: 10px;
     }
     
+    /* Виправлення для кнопок підключення на планшетах */
     .connect-inputs {
-        flex-direction: column;
-        gap: 12px;
+        gap: 8px;
     }
     
     #friendIdInput {
-        width: 100%;
+        min-width: 100px;
     }
 }
 
@@ -998,6 +1001,29 @@ li.deleting {
     
     .id-display, #friendIdInput {
         padding: 12px 14px;
+    }
+    
+    /* ВИПРАВЛЕННЯ ДЛЯ МОБІЛЬНИХ - КНОПКИ ЗАЛИШАЮТЬСЯ В РЯДКУ */
+    .connect-inputs {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    
+    #friendIdInput {
+        min-width: 80px;
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+    
+    .connection-buttons {
+        flex-shrink: 0;
+    }
+    
+    .connect-btn, .disconnect-btn {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
     }
     
     .id-display {
@@ -1097,6 +1123,29 @@ li.deleting {
     .share-panel.open {
         padding: 12px;
         max-height: 340px;
+    }
+    
+    /* ВИПРАВЛЕННЯ ДЛЯ ДУЖЕ МАЛИХ ЕКРАНІВ */
+    .connect-inputs {
+        gap: 6px;
+    }
+    
+    #friendIdInput {
+        min-width: 60px;
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+    
+    .connection-buttons {
+        gap: 4px;
+    }
+    
+    .connect-btn, .disconnect-btn {
+        min-width: 35px;
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+        font-size: 14px;
     }
 }
 
